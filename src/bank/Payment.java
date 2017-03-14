@@ -36,11 +36,11 @@ public class Payment {
 		for (int i = 0; i < steps.size(); ++i) {
 			current = steps.get(i);
 
-			if (!current.equals(null)) {
+			if (current != null) {
 				System.out.println(current);
 				continue;
 			} else {
-				System.out.println(current);
+				System.out.println(i);
 				break;
 			}
 		}
